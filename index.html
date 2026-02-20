@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aparna Viswanath | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #141E30, #243B55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+p {
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 20px 40px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.design {
+    background: rgba(0, 255, 200, 0.15);
+    border: 2px solid #00ffc8;
+    color: #00ffc8;
+}
+
+.design:hover {
+    background: #00ffc8;
+    color: #111;
+    transform: scale(1.05);
+}
+
+.data {
+    background: rgba(255, 170, 0, 0.15);
+    border: 2px solid #ffaa00;
+    color: #ffaa00;
+}
+
+.data:hover {
+    background: #ffaa00;
+    color: #111;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Aparna Viswanath</h1>
+    <p>Choose the portfolio you would like to explore</p>
+
+    <div class="buttons">
+        <a href="game-design.html" class="btn design">
+            🎮 Enter as Game Designer
+        </a>
+
+        <a href="data-engineer.html" class="btn data">
+            📊 Enter as Data Engineer
+        </a>
+    </div>
+</div>
+
+<footer>
+© 2026 Aparna Viswanath
+</footer>
+
+</body>
+</html>
